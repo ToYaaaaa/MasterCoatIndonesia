@@ -42,7 +42,7 @@
   }
 
   .hero .heroleft > h3 {
-    font-size: clamp(15px, 4.5vw, 1rem);
+    font-size: clamp(18px, 5vw, 1.2rem);
   }
 
   .hero .heroleft > .btn {
