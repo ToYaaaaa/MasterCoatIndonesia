@@ -1,0 +1,49 @@
+/*MOBILE (HP)*/
+
+@media (max-width: 576px) {
+  /* navbar */
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .navbar .navmiddle {
+    display: none;
+  }
+
+  .navbar .navright {
+    display: none;
+  }
+
+  .navbar .nav-respon {
+    display: block;
+  }
+
+  .navbar .navlist {
+    right: 0;
+    left: auto;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 1px 2px 5px black;
+    font-weight: bold;
+  }
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Navbar */
+
+  /* Hero */
+
+  /* About Us */
+
+  /* Layanan */
+
+  /* Alasan */
+
+  /* Review */
+
+  /* Footer */
+}

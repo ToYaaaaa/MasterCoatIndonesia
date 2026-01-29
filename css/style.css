@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  --primary: #0b3c5d;
+  --secondary: #1c6e8c;
+  font-family: "poppins" sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar .navleft {
+  width: 10rem;
+}
+
+.navbar .navmiddle .navlist {
+  margin: 0;
+  width: 25rem;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.navbar .hamburger {
+  display: none;
+}
+
+.navbar .nav-respon {
+  display: none;
+}

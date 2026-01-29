@@ -1,0 +1,194 @@
+@media (max-width: 576px) {
+  /* Navbar */
+  .navbarr > .top {
+    display: none;
+  }
+
+  .navbarr .bottom {
+    width: 100%;
+    align-items: center;
+  }
+
+  .navbarr .bottom img {
+    width: 30%;
+  }
+
+  .navlist {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 80%;
+    list-style-type: none;
+  }
+
+  .navlist li::after {
+    content: "";
+    border-bottom: 1px solid white;
+    padding-bottom: 0.1rem;
+    display: block;
+  }
+
+  .navbarr .bottom .button {
+    display: none;
+  }
+
+  /* Hero */
+
+  .hero .description {
+    position: absolute;
+    top: 27%;
+    color: white;
+    margin: 0 5%;
+  }
+
+  .hero .description p {
+    font-size: clamp(15px, 1vw, 1rem);
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font-weight: bold;
+  }
+
+  /* About Us */
+  .aboutus {
+    height: 100%;
+    padding: 5rem 0;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 14rem; */
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .aboutus .image-stack {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .aboutus .image-stack .img {
+    width: 40%;
+    margin: 0 20%;
+  }
+
+  .aboutus .image-stack .img-2 {
+    top: 70px;
+    left: 40px;
+  }
+
+  .aboutus .wrapper .descriptionabout {
+    width: 70%;
+    height: 70%;
+    margin: 0 15%;
+  }
+
+  .aboutus .wrapper .descriptionabout .top h3 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+  }
+  .aboutus .wrapper .descriptionabout .top h1 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+    text-align: start;
+  }
+
+  .aboutus .wrapper .descriptionabout .top,
+  .bottom p {
+    text-align: justify;
+  }
+
+  /* Layanan */
+  .layanan .sectionporto {
+    position: static;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .layanan .sectionporto p {
+    margin: 0;
+  }
+
+  .layanan .sectionporto .section > h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  .layanan .sectionporto .section > p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .layanan .sectionporto .section {
+    width: 50%;
+  }
+
+  .layanan .jenislayanan {
+    padding-bottom: 5%;
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .layanan .jenislayanan > h4 {
+    font-weight: bold;
+    font-family: "poppins", sans-serif;
+    font-size: 32px;
+    margin-top: 10%;
+  }
+
+  /* membrane */
+  .layanan .jenislayanan .membrane {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .layanan .membrane .kategorimembrane {
+    gap: 3rem;
+  }
+  .layanan .membrane .kategorimembrane .card {
+    max-width: 20rem;
+  }
+
+  /* injeksi */
+
+  .layanan .jenislayanan .injeksi {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .layanan .injeksi .kategoriinjeksi {
+    gap: 3rem;
+  }
+  .layanan .injeksi .kategoriinjeksi .card {
+    max-width: 20rem;
+  }
+
+  /* epoxy & coating */
+  .layanan .jenislayanan .epoxy {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .layanan .epoxy .kategoriepoxy {
+    gap: 3rem;
+  }
+  .layanan .epoxy .kategoriepoxy .card {
+    max-width: 20rem;
+  }
+
+  /* Alasan */
+
+  /* Review */
+  .review .text p {
+    font-size: 0.8rem;
+    margin: 0 2%;
+  }
+
+  /* Footer */
+}
