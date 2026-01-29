@@ -48,6 +48,58 @@
     width: 8rem;
     font-size: clamp(12px, 3.5vw, 0.8rem);
   }
+
+  /* About Us */
+  .aboutus {
+    height: 100%;
+    padding: 5rem 0;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 14rem; */
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .aboutus .image-stack {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .aboutus .image-stack .img {
+    width: 40%;
+    margin: 0 20%;
+  }
+
+  .aboutus .image-stack .img-2 {
+    top: 70px;
+    left: 40px;
+  }
+
+  .aboutus .wrapper .descriptionabout {
+    width: 70%;
+    height: 70%;
+    margin: 0 15%;
+  }
+
+  .aboutus .wrapper .descriptionabout .top h3 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+  }
+  .aboutus .wrapper .descriptionabout .top h1 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+    text-align: start;
+  }
+
+  .aboutus .wrapper .descriptionabout .top,
+  .bottom p {
+    text-align: justify;
+  }
 }
 
 /*TABLET*/

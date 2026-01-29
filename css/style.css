@@ -90,8 +90,82 @@ a {
   font-weight: 500;
   text-shadow: none;
 }
-/* 
-.hero .heroleft h3 {
-  font-size: 15px;
-  font-size: clamp(20px, 1.5vw, 1.5rem);
-} */
+
+/* about us */
+.aboutus {
+  height: 80dvh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.wrapper {
+  height: 70dvh;
+  display: flex;
+  /* background-color: black; */
+  justify-content: space-around;
+  padding: 0 8%;
+}
+
+/* top */
+.aboutus .image-stack {
+  position: relative;
+  height: 70%;
+  width: 50%;
+}
+
+.aboutus .image-stack .img {
+  position: absolute;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* gambar atas */
+.aboutus .image-stack .img-1 {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* gambar bawah */
+.aboutus .image-stack .img-2 {
+  top: 160px;
+  left: 120px;
+  z-index: 2;
+}
+
+/* bottom */
+.aboutus .wrapper .descriptionabout {
+  width: 50%;
+  height: 70%;
+}
+
+.aboutus .wrapper .descriptionabout .top {
+  display: inline-block;
+}
+
+.aboutus .wrapper .descriptionabout .top > h3 {
+  font-size: clamp(30px, 2vw, 2rem);
+}
+.aboutus .wrapper .descriptionabout .top > h1 {
+  font-size: clamp(40px, 4vw, 3rem);
+}
+
+.aboutus .wrapper .descriptionabout .bottom {
+  display: none;
+}
+
+.aboutus .descriptionabout .bottom.active {
+  display: inline-block;
+}
+
+.aboutus .descriptionabout .button {
+  padding: 6px 12px;
+  margin-top: 3%;
+  color: white;
+  border-radius: 6px;
+  background-color: #027ca8;
+  border: none;
+}
