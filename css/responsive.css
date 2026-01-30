@@ -101,6 +101,38 @@
   .bottom p {
     text-align: justify;
   }
+
+  /* project */
+  .project {
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+    /* margin-top: 3rem; */
+  }
+
+  .projectleft {
+    width: 100%;
+    padding: 0 5%;
+    padding-top: 3rem;
+    background: #f5f7f9;
+  }
+
+  .project .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project .slide img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+
+  .project .slide p {
+    text-align: center;
+  }
 }
 
 /* Mobile landscape */

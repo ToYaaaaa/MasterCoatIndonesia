@@ -60,6 +60,7 @@ a {
   justify-content: start;
   align-items: center;
   color: black;
+  margin-top: 3%;
 }
 
 .hero .heroleft {
@@ -220,9 +221,6 @@ a {
   background: transparent;
   font-size: 1.5rem;
   cursor: pointer;
-  transition:
-    background 0.2s ease,
-    color 0.2s ease;
 }
 
 .project-arrow:hover {
@@ -254,11 +252,166 @@ a {
   border-radius: 4px;
 }
 
-.project .slide p {
-  margin-top: 0.75rem;
+/* layanan page */
+.layanan {
+  height: 60%;
+}
+
+.layanan .sectionporto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: relative;
+  margin: -4% auto 0;
+  /* max-width: 1200px; */
+  padding: 1%;
+}
+.layanan .sectionporto p {
+  margin: 0;
+}
+
+.layanan .sectionporto .section {
+  text-align: center;
+  width: 200px;
+  padding: 1%;
+  border: 2px solid black;
+}
+
+.layanan .sectionporto .section > h4 {
+  font-size: 3rem;
   font-weight: bold;
-  font-family: "Playfair Display", serif;
-  letter-spacing: 0.18em;
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  margin: 0;
+}
+
+.layanan .sectionporto .section:nth-child(1) {
+  background-color: #027ca8;
+  color: white;
+}
+.layanan .sectionporto .section:nth-child(2) {
+  background-color: #000000;
+  color: white;
+}
+.layanan .sectionporto .section:nth-child(3) {
+  background-color: #f5f5f5;
+  color: black;
+}
+.layanan .sectionporto .section:nth-child(4) {
+  background-color: #027ca8;
+  color: white;
+}
+
+.layanan h1 {
+  padding-top: 2rem;
+  text-align: center;
+  margin: 0.1rem auto 0.1rem;
+  text-shadow: 2px 2px 2px white;
+  font-weight: bold;
+  font-size: clamp(40px, 4vw, 3rem);
+  letter-spacing: 2px;
+  line-height: 1.1;
+  color: black;
+}
+
+.layanan ul {
+  list-style-type: none;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.layanan ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+.layanan ul li img {
+  width: 250px;
+  box-shadow: 0.3rem 0.3rem 0.6rem black;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+.layanan ul li > h5 {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: var(--secondary);
+  color: white;
+  padding: 3%;
+  cursor: pointer;
+}
+
+/* list layanan ketika di klik*/
+.list-layanan {
+  width: 100%;
+  padding-top: 2rem;
+  display: none;
+}
+
+.list-layanan h2 {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--primary);
+}
+
+.product-items {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: auto;
+}
+
+.product-card {
+  background: white;
+  padding: 1rem;
+  width: 30%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  /* background-color: blue; */
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h4 {
+  margin-top: 1rem;
+  font-size: clamp(25px, 1, 8vw, 1.8rem);
+}
+
+/* Alasan */
+.alasan {
+  /* max-width: 1200px; */
+  width: 100%;
+  padding-top: 3rem;
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ebebebee;
+  padding-bottom: 5%;
+}
+
+.alasan .wrapperlist {
+  max-width: 1000px;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.alasan .wrapperlist .list {
+  max-width: 15rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+}
+
+.alasan .wrapperlist .list > h5 {
+  margin-bottom: 10px;
+  color: #4773af;
+  font-size: clamp(18px, 1.1vw, 20px);
 }
