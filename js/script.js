@@ -1,4 +1,4 @@
-// about us section
+// tentang kami section
 const buttondescription = document.getElementById("buttondescription");
 const bottomdescription = document.getElementById("bottom");
 
@@ -11,6 +11,35 @@ buttondescription.addEventListener("click", () => {
     ? "Read Less"
     : "Read More";
 });
+
+// project section
+const track = document.querySelector(".project .track");
+const slides = Array.from(document.querySelectorAll(".project .slide"));
+const prevBtn = document.querySelector(".project-arrow.prev");
+const nextBtn = document.querySelector(".project-arrow.next");
+
+let currentIndex = 0;
+const totalSlides = slides.length;
+
+function updateSlide() {
+  const offset = 100 * currentIndex;
+  track.style.transform = `translateX(-${offset}%)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateSlide();
+});
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  updateSlide();
+});
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateSlide();
+}, 5000);
 
 // loader saat dibuka
 window.addEventListener("load", () => {
