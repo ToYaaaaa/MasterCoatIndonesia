@@ -50,6 +50,32 @@
     font-size: clamp(12px, 3.5vw, 0.8rem);
   }
 
+  /* portofolio */
+  .sectionporto {
+    position: static;
+    flex-wrap: wrap;
+    /* margin-top: 1rem; */
+    padding: 0;
+  }
+
+  .sectionporto p {
+    margin: 0;
+  }
+
+  .sectionporto .section > h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  .sectionporto .section > p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .sectionporto .section {
+    width: 50%;
+  }
+
   /* About Us */
   .aboutus {
     height: 100%;
@@ -100,6 +126,182 @@
   .aboutus .wrapper .descriptionabout .top,
   .bottom p {
     text-align: justify;
+  }
+
+  /* project */
+  .project {
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+    /* margin-top: 3rem; */
+  }
+
+  .projectleft {
+    width: 100%;
+    padding: 0 5%;
+    padding-top: 3rem;
+    background: #f5f7f9;
+  }
+
+  .project .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project .slide img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+
+  .project .slide p {
+    text-align: center;
+  }
+
+  /* layanan */
+
+  .layanan {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .layanan > h1 {
+    margin-bottom: 2rem;
+  }
+
+  .layanan ul {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.2srem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .layanan ul li {
+    width: 40%;
+    margin-bottom: 1rem;
+  }
+
+  .layanan ul li img {
+    width: 100%;
+  }
+
+  .layanan ul li > h5 {
+    font-size: 2vw;
+    font-size: clamp(12px, 3.2vw, 0.8rem);
+  }
+  /* list layanan ketika di klik*/
+  .list-layanan {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    display: none;
+  }
+
+  .list-layanan h2 {
+    text-align: center;
+    font-weight: 800;
+    font-style: underline;
+  }
+
+  .product-items {
+    display: flex;
+    max-width: 100%;
+    padding: 0 5%;
+    gap: 1rem;
+    background-color: white;
+    flex-direction: column;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .product-card h4 {
+    margin-top: 1rem;
+    font-size: clamp(25px, 1, 8vw, 1.8rem);
+  }
+
+  /* alasan */
+  .alasan h1 {
+    font-size: clamp(30px, 8vw, 1.9rem);
+  }
+
+  /* review */
+  .review .text p {
+    font-size: 0.8rem;
+    margin: 0 2%;
+  }
+
+  /* footer */
+  .footer {
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 1px 1px 3px black;
+    padding: 1rem 1rem;
+    color: white;
+  }
+
+  .footer .footertop {
+    width: 25rem;
+  }
+
+  .footer .footertop > p {
+    font-size: clamp(12px, 3.5vw, 0.8rem);
+  }
+
+  .footer .footertop > h2 {
+    font-size: clamp(20px, 1.7vw, 1.6rem);
+  }
+
+  .footer .footerbottom > h2 {
+    font-size: clamp(20px, 2vw, 2.2rem);
+  }
+
+  .footer .footerbottom .listkontak {
+    font-size: 110%;
+    width: 8rem;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Mobile landscape */
+@media (min-width: 577px) and (max-width: 767px) {
+  /* navbar */
+  .navbar {
+    justify-content: space-between;
+    padding: 1% 1.5% 1% 3%;
+  }
+
+  .navbar .navmiddle {
+    display: none;
+  }
+
+  .navbar .navright {
+    display: none;
+  }
+
+  .navbar .nav-respon {
+    display: block;
+  }
+
+  .navbar .navlist {
+    right: 0;
+    left: auto;
+    background-color: rgba(11, 60, 93, 1);
+    border: 1px solid black;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    text-shadow: 1px 1px 15px black;
+    font-weight: 300;
   }
 }
 
