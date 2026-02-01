@@ -13,6 +13,51 @@ a {
   margin: 0;
 }
 
+/* loader section */
+body.loading {
+  overflow: hidden;
+}
+
+#loader {
+  position: fixed;
+  inset: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
+}
+
+#loader img {
+  width: 120px;
+  animation: zoom 1.5s ease-in-out infinite;
+}
+
+/* animasi logo */
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* loader hidden */
+#loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* navbar page */
 .navbar {
   width: 100%;
