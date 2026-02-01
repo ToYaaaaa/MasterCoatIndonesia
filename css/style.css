@@ -100,6 +100,8 @@ a {
 }
 .sectionporto p {
   margin: 0;
+  color: #d6e3ec;
+  text-shadow: 0.5px 0.5px 1px white;
 }
 
 .sectionporto .section {
@@ -115,19 +117,19 @@ a {
 }
 
 .sectionporto .section:nth-child(1) {
-  background-color: var(--primary);
+  background-color: #0b2e45;
   color: white;
 }
 .sectionporto .section:nth-child(2) {
-  background-color: rgba(249, 115, 22, 1);
+  background-color: #103b5d;
   color: white;
 }
 .sectionporto .section:nth-child(3) {
-  background-color: #027ca8;
+  background-color: #154a6a;
   color: white;
 }
 .sectionporto .section:nth-child(4) {
-  background-color: var(--secondary);
+  background-color: #1a5a7a;
   color: white;
 }
 
@@ -206,7 +208,7 @@ a {
   margin-top: 3%;
   color: white;
   border-radius: 6px;
-  background-color: var(--orange);
+  background-color: var(--secondary);
   border: none;
 }
 
@@ -261,7 +263,7 @@ a {
   background: transparent;
   font-size: 1.5rem;
   cursor: pointer;
-  background-color: var(--orange);
+  background-color: var(--secondary);
 }
 
 .project .carousel {
@@ -324,7 +326,7 @@ a {
 
 .layanan ul li > h5 {
   border-radius: 10px;
-  background-color: var(--orange);
+  background-color: var(--secondary);
   color: white;
   padding: 3%;
   cursor: pointer;
@@ -515,7 +517,7 @@ a {
   padding: 0.6rem;
   color: white;
   font-weight: bold;
-  background-color: var(--orange);
+  background-color: var(--secondary);
 }
 
 .copyright > p {
