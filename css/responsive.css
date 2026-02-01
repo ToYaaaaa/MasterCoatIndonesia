@@ -160,6 +160,13 @@
     text-align: center;
   }
 
+  .title {
+    font-size: clamp(30px, 9vw, 2rem);
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: black;
+  }
+
   /* layanan */
 
   .layanan {
@@ -237,15 +244,19 @@
     margin: 0 2%;
   }
 
+  .review .text h1 {
+    font-size: clamp(30px, 8vw, 2rem);
+  }
+
   /* footer */
   .footer {
-    width: 100%;
-    background-color: var(--primary);
-    display: flex;
-    justify-content: space-between;
-    text-shadow: 1px 1px 3px black;
-    padding: 1rem 1rem;
+    padding: 2rem;
+    background-color: #6c7e8e;
     color: white;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .footer .footertop {

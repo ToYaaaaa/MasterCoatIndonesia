@@ -48,7 +48,7 @@ a {
 
 /* hero page */
 .hero {
-  background-image: url("../image/epoxy1.png");
+  background-image: url("../image/workabout.png");
   background-position: center;
   background-size: cover;
   height: 100dvh;
@@ -61,7 +61,7 @@ a {
 
 .hero .heroleft {
   height: 100%;
-  text-shadow: 1px 1px 2px white;
+  text-shadow: 1px 1px 2px black;
   font-weight: bold;
   display: flex;
   width: 70%;
@@ -71,16 +71,24 @@ a {
   flex-direction: column;
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.6) 40%,
-    rgba(255, 255, 255, 0.4) 70%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(0, 0, 0, 0.6) 40%,
+    rgba(0, 0, 0, 0.4) 70%,
+    rgba(0, 0, 0, 0) 100%
   );
 }
 
 .hero .heroleft h1 {
-  margin: 0;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid black;
+  margin: 0;
+  color: white;
+  /* font-size: clamp(30px, 5vw, 4rem); */
+  font-weight: 600;
+  text-shadow: 3px 3px 5px black;
+}
+.hero .heroleft h3 {
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 .hero .heroleft > .btn {
@@ -435,7 +443,7 @@ a {
   padding-bottom: 5%;
 }
 
-.review h1 {
+.review .text h1 {
   padding-top: 2rem;
   text-align: center;
   margin: 0.1rem auto 0.1rem;
@@ -465,6 +473,8 @@ a {
 
 .review .wrapperlistreview .list .top > img {
   border-radius: 50%;
+  box-shadow: 1px 1px 6px black;
+  margin-bottom: 5%;
 }
 
 .review .wrapperlistreview .list > h5 {
@@ -479,13 +489,13 @@ a {
 
 /* footer */
 .footer {
-  width: 100%;
-  background-color: var(--primary);
-  display: flex;
-  justify-content: space-between;
-  text-shadow: 1px 1px 3px black;
-  padding: 1rem 5rem;
+  padding: 2rem;
+  background-color: #6c7e8e;
   color: white;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer .footertop {
@@ -517,7 +527,7 @@ a {
   padding: 0.6rem;
   color: white;
   font-weight: bold;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .copyright > p {
