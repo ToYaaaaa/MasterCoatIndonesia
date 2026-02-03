@@ -314,21 +314,384 @@
     text-shadow: 1px 1px 15px black;
     font-weight: 300;
   }
+
+  /* hero */
+  .hero .heroleft {
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  .hero .heroleft > h1 {
+    font-size: clamp(20px, 6vw, 1.4rem);
+  }
+
+  .hero .heroleft > h3 {
+    font-size: clamp(18px, 5vw, 1.2rem);
+  }
+
+  .hero .heroleft > .btn {
+    width: 8rem;
+    font-size: clamp(12px, 3.5vw, 0.8rem);
+  }
+
+  /* portofolio */
+  .sectionporto {
+    position: static;
+    flex-wrap: wrap;
+    /* margin-top: 1rem; */
+    padding: 0;
+  }
+
+  .sectionporto p {
+    margin: 0;
+  }
+
+  .sectionporto .section > h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  .sectionporto .section > p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .sectionporto .section {
+    width: 50%;
+  }
+
+  /* About Us */
+  .aboutus {
+    height: 100%;
+    padding: 5rem 0;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 14rem; */
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .aboutus .image-stack {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .aboutus .image-stack .img {
+    width: 30%;
+    margin: 0 30%;
+  }
+
+  .aboutus .image-stack .img-2 {
+    top: 70px;
+    left: 40px;
+  }
+
+  .aboutus .wrapper .descriptionabout {
+    width: 70%;
+    height: 70%;
+    margin: 0 15%;
+  }
+
+  .aboutus .wrapper .descriptionabout .top h3 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+  }
+  .aboutus .wrapper .descriptionabout .top h1 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+    text-align: start;
+  }
+
+  .aboutus .wrapper .descriptionabout .top,
+  .bottom p {
+    text-align: justify;
+  }
+
+  /* project */
+  .project {
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+    /* margin-top: 3rem; */
+  }
+
+  .projectleft {
+    width: 100%;
+    padding: 0 5%;
+    padding-top: 3rem;
+    background: #f5f7f9;
+  }
+
+  .project .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project .slide img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+
+  .project .slide p {
+    text-align: center;
+  }
+
+  .title {
+    font-size: clamp(30px, 9vw, 2rem);
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: black;
+  }
+
+  /* layanan */
+
+  .layanan {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .layanan > h1 {
+    margin-bottom: 2rem;
+  }
+
+  .layanan ul {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.2srem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .layanan ul li {
+    width: 35%;
+    margin-bottom: 1rem;
+  }
+
+  .layanan ul li img {
+    width: 100%;
+  }
+
+  .layanan ul li > h5 {
+    font-size: 2vw;
+    font-size: clamp(12px, 3.2vw, 0.8rem);
+  }
+  /* list layanan ketika di klik*/
+  .list-layanan {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    display: none;
+  }
+
+  .list-layanan h2 {
+    text-align: center;
+    font-weight: 800;
+    font-style: underline;
+  }
+
+  .product-items {
+    display: flex;
+    max-width: 100%;
+    padding: 0 5%;
+    gap: 1rem;
+    background-color: white;
+    flex-direction: column;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .product-card h4 {
+    margin-top: 1rem;
+    font-size: clamp(25px, 1, 8vw, 1.8rem);
+  }
+
+  /* alasan */
+  .alasan h1 {
+    font-size: clamp(30px, 8vw, 1.9rem);
+  }
+
+  /* review */
+  .review .text p {
+    font-size: 0.8rem;
+    margin: 0 2%;
+  }
+
+  .review .text h1 {
+    font-size: clamp(30px, 8vw, 2rem);
+  }
+
+  /* footer */
+  .footer {
+    padding: 2rem;
+    background-color: #6c7e8e;
+    color: white;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer .footertop {
+    width: 25rem;
+  }
+
+  .footer .footertop > p {
+    font-size: clamp(12px, 3.5vw, 0.8rem);
+  }
+
+  .footer .footertop > h2 {
+    font-size: clamp(20px, 1.7vw, 1.6rem);
+  }
+
+  .footer .footerbottom > h2 {
+    font-size: clamp(20px, 2vw, 2.2rem);
+  }
+
+  .footer .footerbottom .listkontak {
+    font-size: 110%;
+    width: 8rem;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Navbar */
-
-  /* Hero */
-
   /* About Us */
+  .aboutus {
+    height: 100%;
+    padding: 5rem 0;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 14rem; */
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .aboutus .image-stack {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .aboutus .image-stack .img {
+    width: 30%;
+    margin: 0 30%;
+  }
+
+  .aboutus .image-stack .img-2 {
+    top: 100px;
+    left: 40px;
+  }
+
+  .aboutus .wrapper .descriptionabout {
+    width: 70%;
+    height: 70%;
+    margin: 0 15%;
+    margin-top: 10%;
+  }
+
+  .aboutus .wrapper .descriptionabout .top h3 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+  }
+  .aboutus .wrapper .descriptionabout .top h1 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+    text-align: start;
+  }
+
+  .aboutus .wrapper .descriptionabout .top,
+  .bottom p {
+    text-align: justify;
+  }
 
   /* Layanan */
+  .layanan {
+    height: auto;
+    padding-bottom: 2rem;
+  }
 
-  /* Alasan */
+  .layanan > h1 {
+    margin-bottom: 2rem;
+  }
 
-  /* Review */
+  .layanan ul {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.2srem;
+    margin: 0;
+    padding: 0;
+  }
 
-  /* Footer */
+  .layanan ul li {
+    width: 35%;
+    margin-bottom: 1rem;
+  }
+
+  .layanan ul li img {
+    width: 100%;
+  }
+
+  .layanan ul li > h5 {
+    font-size: 2vw;
+    font-size: clamp(12px, 3.2vw, 0.8rem);
+  }
+  /* list layanan ketika di klik*/
+  .list-layanan {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    display: none;
+  }
+
+  .list-layanan h2 {
+    text-align: center;
+    font-weight: 800;
+    font-style: underline;
+  }
+
+  .product-items {
+    display: flex;
+    max-width: 100%;
+    padding: 0 5%;
+    gap: 1rem;
+    background-color: white;
+    flex-direction: column;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .product-card h4 {
+    margin-top: 1rem;
+    font-size: clamp(25px, 1, 8vw, 1.8rem);
+  }
+
+  /* project */
+  .title {
+    font-size: clamp(30px, 9vw, 2rem);
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: black;
+  }
 }
