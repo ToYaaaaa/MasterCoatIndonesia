@@ -45,49 +45,56 @@ setInterval(() => {
 const listlayanan = document.getElementById("list-layanan");
 
 const layanan = {
-  MEMBRANE: [
-    {
-      img: "image/membrane1.png",
-      name: "Waterproofing Membrane Bakar",
-      text: "Waterproofing Membrane Bakar adalah metode pelapisan anti-air menggunakan membran khusus yang dipanaskan dan dilekatkan pada permukaan bangunan.Teknik ini menghasilkan lapisan pelindung yang kuat dan kedap air untuk mencegah rembesan dan kelembapan.",
-    },
-    {
-      img: "image/membrane2.png",
-      name: "Waterproofing Membrane Bakar Tempel Granule",
-      text: "Waterproofing Membrane Tempel Granule adalah pelapisan anti-air menggunakan membran granule berperekat khusus.Memberikan perlindungan kuat dan kedap air dari rembesan serta kelembapan.",
-    },
-  ],
-  INJEKSI: [
-    {
-      img: "image/injeksi1.png",
-      name: "Injeksi Grouting",
-      text: "Injeksi Grouting adalah metode perbaikan dengan menyuntikkan material grouting ke dalam retakan atau rongga beton.Teknik ini memperkuat struktur, mengisi celah, dan mencegah kerusakan lebih lanjut.",
-    },
-    {
-      img: "image/injeksi2.png",
-      name: "Injeksi Epoxy",
-      text: "Injeksi Epoxy adalah metode perbaikan beton dengan menyuntikkan epoxy berdaya rekat tinggi ke dalam retakan.Teknik ini mengembalikan kekuatan struktur, mencegah air dan korosi, serta memperpanjang umur bangunan.",
-    },
-    {
-      img: "image/injeksi3.png",
-      name: "Injeksi PU Polyurethane",
-      text: "Injeksi Epoxy adalah metode perbaikan beton dengan Polyurethane (PU) Injection Foam adalah metode penyuntikan resin poliuretan ke retakan beton yang mengembang menjadi busa kedap air. Efektif menghentikan kebocoran serta memperkuat struktur pada area basah maupun kering.",
-    },
-  ],
-  EPOXY: [
-    {
-      img: "image/epoxy1.png",
-      name: "Epoxy Lantai, Epoxy Silica/Anti Slip",
-      text: "Epoxy Lantai adalah pelapis berbahan resin epoksi yang menghasilkan permukaan keras, mulus, dan tahan lama. Cocok untuk area industri, komersial, hingga rumah, dengan pilihan self-leveling dan multilayer.",
-    },
-  ],
-  COATING: [
-    {
-      img: "image/coating1.png",
-      name: "Waterproofing Coating Dinding",
-      text: "Waterproofing Coating Dinding adalah pelapisan cair untuk menciptakan lapisan kedap air pada permukaan dinding. Berfungsi mencegah rembesan dan melindungi bangunan dari kerusakan akibat air.",
-    },
-  ],
+  MEMBRANE: {
+    title: "MEMBRANE BAKAR",
+    items: [
+      {
+        img: "image/membrane1.png",
+        name: "Waterproofing Membrane Bakar",
+        text: "Waterproofing Membrane Bakar adalah metode pelapisan anti-air menggunakan membran khusus yang dipanaskan dan dilekatkan pada permukaan bangunan.Teknik ini menghasilkan lapisan pelindung yang kuat dan kedap air untuk mencegah rembesan dan kelembapan.",
+      },
+    ],
+  },
+  INJEKSI: {
+    title: "Injeksi",
+    items: [
+      {
+        img: "image/injeksi1.png",
+        name: "Injeksi Grouting",
+        text: "Injeksi Grouting adalah metode perbaikan dengan menyuntikkan material grouting ke dalam retakan atau rongga beton.Teknik ini memperkuat struktur, mengisi celah, dan mencegah kerusakan lebih lanjut.",
+      },
+      {
+        img: "image/injeksi2.png",
+        name: "Injeksi Epoxy",
+        text: "Injeksi Epoxy adalah metode perbaikan beton dengan menyuntikkan epoxy berdaya rekat tinggi ke dalam retakan.Teknik ini mengembalikan kekuatan struktur, mencegah air dan korosi, serta memperpanjang umur bangunan.",
+      },
+      {
+        img: "image/injeksi3.png",
+        name: "Injeksi PU Polyurethane",
+        text: "Injeksi Epoxy adalah metode perbaikan beton dengan Polyurethane (PU) Injection Foam adalah metode penyuntikan resin poliuretan ke retakan beton yang mengembang menjadi busa kedap air. Efektif menghentikan kebocoran serta memperkuat struktur pada area basah maupun kering.",
+      },
+    ],
+  },
+  EPOXY: {
+    title: "Epoxy",
+    items: [
+      {
+        img: "image/epoxy1.png",
+        name: "Epoxy Lantai, Epoxy Silica/Anti Slip",
+        text: "Epoxy Lantai adalah pelapis berbahan resin epoksi yang menghasilkan permukaan keras, mulus, dan tahan lama. Cocok untuk area industri, komersial, hingga rumah, dengan pilihan self-leveling dan multilayer.",
+      },
+    ],
+  },
+  COATING: {
+    title: "Waterproofing Coating Dinding",
+    items: [
+      {
+        img: "image/coating1.png",
+        name: "Waterproofing Coating Dinding",
+        text: "Waterproofing Coating Dinding adalah pelapisan cair untuk menciptakan lapisan kedap air pada permukaan dinding. Berfungsi mencegah rembesan dan melindungi bangunan dari kerusakan akibat air.",
+      },
+    ],
+  },
 };
 
 let openCategory = null;
@@ -102,21 +109,22 @@ function showProducts(category) {
   openCategory = category;
   listlayanan.style.display = "block";
 
-  const itemsHTML = layanan[category]
+  const itemsHTML = layanan[category].items
     .map(
       (item) => `
-      <div class="product-card">
-        <img src="${item.img}">
-        <h4>${item.name}</h4>
-        <p> ${item.text}</p>
-      </div>
-    `,
+        <div class="product-card">
+          <img src="${item.img}">
+          <h4>${item.name}</h4>
+          <p>${item.text}</p>
+        </div>
+      `,
     )
     .join("");
 
   listlayanan.innerHTML = `
-    <h2>${category}</h2>
+    <h2>${layanan[category].title}</h2>
     <div class="product-items">${itemsHTML}</div>
+
   `;
 }
 
@@ -131,5 +139,5 @@ window.addEventListener("load", () => {
       history.scrollRestoration = "manual";
     }
     window.scrollTo(0, 0);
-  }, 2000);
+  }, 1000);
 });

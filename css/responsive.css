@@ -695,3 +695,113 @@
     color: black;
   }
 }
+
+/* laptop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* About Us */
+  .aboutus {
+    height: 100%;
+    padding: 5rem 0;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 14rem; */
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .aboutus .image-stack {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .aboutus .image-stack .img {
+    width: 25%;
+    margin: 0 40%;
+  }
+
+  .aboutus .image-stack .img-2 {
+    top: 130px;
+    left: 40px;
+  }
+
+  .aboutus .wrapper .descriptionabout {
+    width: 70%;
+    height: 70%;
+    margin: 0 15%;
+    margin-top: 10%;
+  }
+
+  .aboutus .wrapper .descriptionabout .top h3 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+  }
+  .aboutus .wrapper .descriptionabout .top h1 {
+    font-size: clamp(20px, 4vw, 1.5rem);
+    text-align: start;
+  }
+
+  .aboutus .wrapper .descriptionabout .top,
+  .bottom p {
+    text-align: justify;
+  }
+
+  /* layanan page */
+  .layanan {
+    height: 60%;
+  }
+
+  .layanan h1 {
+    padding-top: 2rem;
+    text-align: center;
+    margin: 0.1rem auto 0.1rem;
+    font-weight: 600;
+    font-size: clamp(36px, 3.5vw, 3rem);
+    line-height: 1.1;
+    color: black;
+  }
+
+  .layanan ul {
+    list-style-type: none;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .layanan ul li {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+  }
+
+  .layanan ul li img {
+    width: 100%;
+    box-shadow: 0.3rem 0.3rem 0.6rem black;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+  }
+
+  .layanan ul li > h5 {
+    border-radius: 10px;
+    background-color: var(--secondary);
+    color: white;
+    padding: 3%;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  /* review */
+  .review .wrapperlistreview .list {
+    max-width: 18rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+  }
+}
