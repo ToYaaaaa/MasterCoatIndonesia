@@ -337,7 +337,7 @@ body.loading {
 }
 
 .project .slide img {
-  width: 80%;
+  width: 60%;
   display: block;
   object-fit: cover;
   border-radius: 4px;
@@ -392,6 +392,11 @@ body.loading {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: none;
+}
+
+.list-layanan > .btn {
+  font-weight: 500;
+  text-shadow: none;
 }
 
 .list-layanan h2 {

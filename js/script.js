@@ -116,6 +116,9 @@ function showProducts(category) {
           <img src="${item.img}">
           <h4>${item.name}</h4>
           <p>${item.text}</p>
+          <a href="https://wa.me/6282122918452" class="btn btn-success"
+          ><i class="fa-brands fa-whatsapp fa-lg"></i> Hubungi Kami</a
+        >
         </div>
       `,
     )
